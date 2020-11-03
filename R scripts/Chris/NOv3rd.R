@@ -108,6 +108,6 @@ tacs -> drsisc
 
 library(dagitty)
 library(batyesianNetworks)
-data = read.csv("data_c.csv")
+data = read.csv("data_cleaned.csv")
 g1 = dagitty("dag{ HighSchool -> {College -> {GRE -> GraduateSchool}}}")
 g2 = graphLayout(g1)
