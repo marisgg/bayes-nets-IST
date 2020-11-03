@@ -1,0 +1,113 @@
+str_graph = "dag {
+"rdef unknown" [pos="1.010,-0.783"]
+age [pos="-0.231,-1.360"]
+ddead [pos="-0.810,0.699"]
+ddiagha [pos="0.435,-0.419"]
+ddiagisc [pos="-1.506,-0.446"]
+dpe [pos="-0.332,0.183"]
+drsh [pos="-0.069,0.480"]
+drsisc [pos="-1.314,0.531"]
+lacs [pos="-0.863,-0.192"]
+occode [pos="-0.392,1.250"]
+oth [pos="-0.475,-0.196"]
+pacs [pos="-1.630,-0.196"]
+pocs [pos="-1.250,-0.192"]
+rdef1 [pos="-1.077,-0.772"]
+rdef2 [pos="-0.827,-0.773"]
+rdef3 [pos="-0.577,-0.775"]
+rdef4 [pos="-0.324,-0.777"]
+rdef5 [pos="-0.077,-0.779"]
+rdef6 [pos="0.173,-0.779"]
+rdef7 [pos="0.420,-0.779"]
+rdef8 [pos="0.664,-0.783"]
+rsbp [pos="-1.834,-0.777"]
+rxasp [pos="-2.142,0.203"]
+rxhep [pos="0.390,0.209"]
+sex [pos="-0.874,-1.347"]
+tacs [pos="-2.033,-0.194"]
+"rdef unknown" -> ddiagha
+"rdef unknown" -> ddiagisc
+age -> "rdef unknown"
+age -> rdef1
+age -> rdef2
+age -> rdef3
+age -> rdef4
+age -> rdef5
+age -> rdef6
+age -> rdef7
+age -> rdef8
+age -> rsbp
+ddead -> occode
+ddiagha -> dpe
+ddiagha -> drsh
+ddiagha <-> ddiagisc
+ddiagisc -> lacs
+ddiagisc -> oth
+ddiagisc -> pacs
+ddiagisc -> pocs
+ddiagisc -> tacs
+dpe -> occode
+drsh -> ddead
+drsh -> occode
+drsisc -> ddead
+drsisc -> occode
+lacs -> dpe
+lacs -> drsisc
+lacs <-> oth
+lacs <-> pocs
+oth -> dpe
+oth -> drsisc
+pacs -> dpe
+pacs -> drsisc
+pacs <-> pocs
+pacs <-> tacs
+pocs -> dpe
+pocs -> drsisc
+rdef1 -> ddiagha
+rdef1 -> ddiagisc
+rdef2 -> ddiagha
+rdef2 -> ddiagisc
+rdef3 -> ddiagha
+rdef3 -> ddiagisc
+rdef4 -> ddiagha
+rdef4 -> ddiagisc
+rdef5 -> ddiagha
+rdef5 -> ddiagisc
+rdef6 -> ddiagha
+rdef6 -> ddiagisc
+rdef7 -> ddiagha
+rdef7 -> ddiagisc
+rdef8 -> ddiagha
+rdef8 -> ddiagisc
+rsbp -> ddiagha
+rsbp -> ddiagisc
+rxasp -> ddead
+rxasp -> drsh
+rxasp -> drsisc
+rxasp -> occode
+rxhep -> ddead
+rxhep -> drsh
+rxhep -> drsisc
+rxhep -> occode
+sex -> "rdef unknown"
+sex -> age
+sex -> rdef1
+sex -> rdef2
+sex -> rdef3
+sex -> rdef4
+sex -> rdef5
+sex -> rdef6
+sex -> rdef7
+sex -> rdef8
+sex -> rsbp
+tacs -> dpe
+tacs -> drsisc
+}
+"
+
+
+library(dagitty)
+library(batyesianNetworks)
+data = read.csv("data_c.csv")
+g1 = dagitty("dag{ HighSchool -> {College -> {GRE -> GraduateSchool}}}")
+g2 = graphLayout(g1)
