@@ -1,0 +1,24 @@
+{
+    "id": "36FBA407",
+    "path": "~/GitHub/bayes-nets-IST/R scripts/Chris/dataset_chisq.R",
+    "project_path": "dataset_chisq.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1604400694471.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "126,35",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1604399575,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1604399575,
+    "read_only": false,
+    "read_only_alternatives": []
+}
