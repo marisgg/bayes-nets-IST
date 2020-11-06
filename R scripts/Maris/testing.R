@@ -1,6 +1,5 @@
 library(dagitty)
 library(bayesianNetworks)
-library(dagitty)
 
 # Read network dag definition from file and parse using daggity
 dag_string <- readr::read_file('../network.txt')
@@ -8,7 +7,8 @@ dag_string <- tolower(dag_string)
 network <- dagitty(dag_string)
 plot(network)
 
-impliedConditionalIndependencies(network)
+CI = impliedConditionalIndependencies(network)
+# readr::write_file(CI, 'impliedConditionalIndependencies.txt')
 
 # Read and hotfix dataset
 dataset <- read.csv('../../IST_corrected_processed.csv')
@@ -23,7 +23,7 @@ chisq.test(dataset$rxasp, dataset$rxhep)
 chisq.test(dataset$age, dataset$rxasp)
 chisq.test(dataset$age, dataset$rxhep)
 
-# this doesn't work with a dataset this big
+# this doesn't work with a data-set this big
 localTests(graphLayout(network), dataset, type="cis.chisq")
 
 # Stubbed code from the companion
@@ -34,3 +34,9 @@ for(x in unique(dataset$ddia)) {
   df <- df + tst$parameter
 }
 chisq; df
+
+options(max.print = 999999)
+localTests(network, dataset, type="cis.chisq", max.conditioning.variables=5)
+
+# This simulates p-values
+chisq.test(dataset$rsbp, dataset$rxasp, simulate.p.value = TRUE)
