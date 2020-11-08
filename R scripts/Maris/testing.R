@@ -8,6 +8,7 @@ network <- dagitty(dag_string)
 plot(network)
 
 CI = impliedConditionalIndependencies(network)
+CI
 # readr::write_file(CI, 'impliedConditionalIndependencies.txt')
 
 # Read and hotfix dataset
@@ -35,8 +36,13 @@ for(x in unique(dataset$ddia)) {
 }
 chisq; df
 
+sink("implconindep.log", type=c("output"))
+sink()
 options(max.print = 999999)
-localTests(network, dataset, type="cis.chisq", max.conditioning.variables=5)
+output = localTests(network, dataset, type="cis.chisq", max.conditioning.variables=5)
+output
+
+
 
 # This simulates p-values
 chisq.test(dataset$rsbp, dataset$rxasp, simulate.p.value = TRUE)
