@@ -1,6 +1,12 @@
 library(dagitty)
 library(bayesianNetworks)
 
+printVariableOutputToLogFile <- function(filename, variable) {
+  sink(filename, type=c("output"))
+  print(variable)
+  sink()
+}
+
 # Read network dag definition from file and parse using daggity
 dag_string <- readr::read_file('../network.txt')
 dag_string <- tolower(dag_string)
@@ -25,8 +31,10 @@ chisq.test(dataset$age, dataset$rxasp)
 chisq.test(dataset$age, dataset$rxhep)
 
 # this doesn't work with a data-set this big
-localTests(graphLayout(network), dataset, type="cis.chisq")
-
+#output_all = localTests(graphLayout(network), dataset, type="cis.chisq")
+#sink("localTests_ALL.log", type=c("output"))
+#output_all
+#sink()
 # Stubbed code from the companion
 chisq <- 0; df <- 0
 for(x in unique(dataset$ddia)) {
@@ -39,8 +47,8 @@ chisq; df
 sink("implconindep.log", type=c("output"))
 sink()
 options(max.print = 999999)
-output = localTests(network, dataset, type="cis.chisq", max.conditioning.variables=5)
-output
+#output = localTests(network, dataset, type="cis.chisq", max.conditioning.variables=5)
+# output
 
 
 
