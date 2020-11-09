@@ -87,7 +87,6 @@ rdef3 -> DDIAGHA
 rdef3 -> DDIAGISC
 rdef4 -> DDIAGHA
 rdef4 -> DDIAGISC
-rdef4 -> rdef3
 rdef5 -> DDIAGHA
 rdef5 -> DDIAGISC
 rdef6 -> DDIAGHA
