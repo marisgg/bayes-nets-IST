@@ -1,13 +1,19 @@
 source("testing.R")
 library(bnlearn)
 
-dataset$age.bin = cut(dataset$age, breaks = c(-Inf,seq(-1,99,by=10),Inf),labels=seq(-10,100,by=10))
-dataset$age.bin = as.numeric(dataset$age.bin)
+dataset$age = cut(dataset$age, breaks = c(-Inf,seq(-1,99,by=10),Inf),labels=seq(-10,100,by=10))
+dataset$age = as.numeric(dataset$age)
 
-dataset$rsbp.bin = cut(dataset$rsbp, breaks = c(-Inf,seq(50,300,by=25),Inf),labels=seq(50-25,300,by=25))
-dataset$rsbp.bin = as.numeric(dataset$rsbp.bin)
+output_bin_age = localTests(graphLayout(network), dataset, type="cis.chisq")
+printVariableOutputToLogFile("localTests_age_bin.log", output_bin_age)
 
-dataset = dataset[ , -which(names(dataset) %in% c("age","rsbp"))]
+dataset$rsbp = cut(dataset$rsbp, breaks = c(-Inf,seq(50,300,by=25),Inf),labels=seq(50-25,300,by=25))
+dataset$rsbp = as.numeric(dataset$rsbp)
+
+output_bin_age_rsbp = localTests(graphLayout(network), dataset, type="cis.chisq")
+printVariableOutputToLogFile("localTests_age_rsbp_bin.log", output_bin_age_rsbp)
+
+# dataset = dataset[ , -which(names(dataset) %in% c("age","rsbp"))]
 
 variables <- occode ~ age.bin + sex + rsbp.bin + rxhep + rxasp
 

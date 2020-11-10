@@ -1,6 +1,8 @@
 library(dagitty)
 library(bayesianNetworks)
 
+options(max.print = 999999)
+
 printVariableOutputToLogFile <- function(filename, variable) {
   sink(filename, type=c("output"))
   print(variable)
@@ -14,7 +16,7 @@ network <- dagitty(dag_string)
 plot(network)
 
 CI = impliedConditionalIndependencies(network)
-CI
+printVariableOutputToLogFile("implconindep.log", CI)
 # readr::write_file(CI, 'impliedConditionalIndependencies.txt')
 
 # Read and hotfix dataset
@@ -30,11 +32,13 @@ chisq.test(dataset$rxasp, dataset$rxhep)
 chisq.test(dataset$age, dataset$rxasp)
 chisq.test(dataset$age, dataset$rxhep)
 
-# this doesn't work with a data-set this big
-#output_all = localTests(graphLayout(network), dataset, type="cis.chisq")
+# output_all = localTests(graphLayout(network), dataset, type="cis.chisq")
 #sink("localTests_ALL.log", type=c("output"))
 #output_all
 #sink()
+
+# printVariableOutputToLogFile("localTests.log", output_all)
+
 # Stubbed code from the companion
 chisq <- 0; df <- 0
 for(x in unique(dataset$ddia)) {
@@ -44,9 +48,7 @@ for(x in unique(dataset$ddia)) {
 }
 chisq; df
 
-sink("implconindep.log", type=c("output"))
-sink()
-options(max.print = 999999)
+
 #output = localTests(network, dataset, type="cis.chisq", max.conditioning.variables=5)
 # output
 
