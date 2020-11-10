@@ -15,18 +15,18 @@ printVariableOutputToLogFile("localTests_age_rsbp_bin.log", output_bin_age_rsbp)
 
 # dataset = dataset[ , -which(names(dataset) %in% c("age","rsbp"))]
 
-variables <- occode ~ age.bin + sex + rsbp.bin + rxhep + rxasp
+variables <- occode ~ age + sex + rsbp + rxhep + rxasp
 
 model.lr <- glm(variables,
-                data=dataset,
+                data=as.data.frame(dataset),
                 family="binomial"
                 )
 
 model.optimal_bayes <- optimal_bayes(variables,
-                                     data=dataset
+                                     data=as.data.frame(dataset)
                                      )
 
-tbl <- expand.grid(sex=c(0,1), rxasp=c(0,1), rxhep=c(0,1), age.bin=seq(-1, 99, by=10), rsbp.bin=seq(50,300,by=25))
+tbl <- expand.grid(sex=c(0,1), rxasp=c(0,1), rxhep=c(0,1), age=seq(-1, 99, by=10), rsbp=seq(50,300,by=25))
 
 data.for.bnlearn <- as.data.frame(lapply(dataset, factor))
 tbl.for.bnlearn <- as.data.frame(lapply(tbl, factor))
@@ -34,4 +34,19 @@ tbl.for.bnlearn <- as.data.frame(lapply(tbl, factor))
 prob.lr <- predict( model.lr, newdata=tbl, type="response")
 prob.optimal_bayes <- predict(model.optimal_bayes, newdata=tbl)[,2]
 
-# How to get BNLEARN model from dagitty?
+
+prob.lr
+
+# BNLEARN model from dagitty
+
+bn.net <- model2network(toString(network,"bnlearn"))
+plot(bn.net)
+
+m.bn <- bn.fit(bn.net, data.for.bnlearn)
+prob.bn <- predict(m.bn, 
+                   node="occode", 
+                   data=tbl.for.bnlearn,
+                   method="bayes-lw",
+                   prob=TRUE,
+                   n=10000
+                   )
