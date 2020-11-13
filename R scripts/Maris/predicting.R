@@ -1,5 +1,7 @@
 source("testing.R")
 
+library(bayesianNetworks)
+library(pROC)
 bn.dataset <- read.csv("../../IST_corrected_processed.csv",colClasses=rep("double",4))
 bn.dataset <- bn.dataset[ , -which(names(bn.dataset) %in% c("ddiagun","dnostrk"))]
 names(bn.dataset) <- tolower(names(bn.dataset))
@@ -52,7 +54,7 @@ dataset$rsbp = as.numeric(dataset$rsbp)
 
 require(caTools)
 
-set.seed(123) 
+set.seed(555) 
 sample = sample.split(bn.dataset[,1], SplitRatio = .75)
 train.bn = subset(bn.dataset, sample == TRUE)
 test.bn  = subset(bn.dataset, sample == FALSE)
@@ -68,7 +70,12 @@ variables_less <- occode ~ age + sex + rsbp + rxhep + rxasp
 lrdisc <- ddiagisc ~ age + sex + rxasp + rxhep
 # variables <- ddiagisc ~ age + rxasp + rxhep
 
-model.lr <- glm(variables_less,
+model.lr <- glm(variables,
+                     data=as.data.frame(train),
+                     family="binomial"
+)
+
+model.lr.less <- glm(variables_less,
                 data=as.data.frame(train),
                 family="binomial"
 )
@@ -94,10 +101,10 @@ bn.net <- model2network(toString(network,"bnlearn"))
 
 
 train.fit <- bn.fit(bn.net, (as.data.frame(lapply(train,factor))))
-fit <- bn.fit(bn.net, train.bn)
+fit <- bn.fit(bn.net, as.data.frame(lapply(train.bn,factor)))
 
-fit.chris <- bn.fit(bn.net, as.data.frame((bn.dataset)))
-fit.prob.chris <- 
+fit.chris <- bn.fit(bn.net, as.data.frame((train.bn)))
+fit.prob.chris <- NULL
 
 # predict(fit, node="ddiagisc", data=data.frame(age=as.double(1:100),ddead=0,rxasp=0,rxhep=0,dpe=0,drsh=0,drsisc=0))
 
@@ -120,7 +127,9 @@ dataframe_14 = data.frame(expand.grid(
   age=as.double(seq(-1, 99, by=10)),sex=vals,rxasp=vals,rxhep=vals,dpe=vals,drsh=vals,drsisc=vals,ddead=vals,dpe=vals))
 prob.lr.morevar <- predict(model.lr, newdata=test, type="response")
 prob.lr <- predict(model.lr, newdata=test, type="response")
+prob.lr_less <- predict(model.lr.less, newdata=test, type="response")
 new.p = predict(train.fit,node="occode",method="bayes-lw",data=as.data.frame(lapply(test,factor)),n=10000,prob=TRUE)
+roc.p = predict(fit,node="occode",method="bayes-lw",data=as.data.frame(lapply(test.bn,factor)),n=10000)
 plot(new.p)
 plot(attr(new.p, "prob")[2,], 
      xlab="Patient", ylab="OCCODE")
@@ -140,4 +149,19 @@ p.lr.ddiagisc
 # prob.lr
 # plot(prob.lr)
 
+y <- attr(new.p, "prob")[2,]
+plot(roc(test$occode, y), col="red", main="ROC curve of the three prediction models.")
+lines(roc(test$occode, prob.lr), col="blue")
+lines(roc(test$occode, prob.lr_less), col="green")
+occode.bn = test.bn$occode
+occode = test$occode
+# y <- na.omit(y)
+a <- auc(test$occode, y)
+b <- auc(test$occode, prob.lr)
+c <- auc(test$occode, prob.lr_less)
+legend("bottomright", 
+       legend = c("Bayesian Inference", "Linear Regression", "Simpl. Linear Regression"), 
+       col = c("red", "blue", "green"),
+       lty = c(1, 1, 1))
 
+       
