@@ -1,3 +1,6 @@
 .ipynb_checkpoints
 .tmp
 .Rproj.user
+R\ scripts/Maris/*.Rproj
+R\ scripts/Maris/.RData
+R\ scripts/Maris/.Rhistory
