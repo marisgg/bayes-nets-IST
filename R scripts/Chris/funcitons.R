@@ -13,8 +13,14 @@ chisq_given <- function(data,x,y,...)
   
   for(row in 1:nrow(cmbs))
   {
-    prb.marginal <- (values.dep[[1]]==cmbs[row,1]) 
-    prb.marginal <- prb.marginal & (values.dep[[2]]==cmbs[row,2]) 
+    L <- length(cmbs)
+    prb.marginal <- (values.dep[[1]]==cmbs[row,1])
+    for(l in 2:L)
+    {
+      #print(l)
+      prb.marginal <- prb.marginal & (values.dep[[l]]==cmbs[row,l]) 
+    }
+    
     
     cmbx = x[prb.marginal]
     cmby = y[prb.marginal]

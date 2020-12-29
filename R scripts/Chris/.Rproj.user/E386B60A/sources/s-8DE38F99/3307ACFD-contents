@@ -1,5 +1,0 @@
-D_test<-function(n)
-{
-  # Compute the square of integer `n` 
-  return(n*2)
-}

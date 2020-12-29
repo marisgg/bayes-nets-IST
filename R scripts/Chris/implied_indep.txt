@@ -1,0 +1,431 @@
+age _||_ dded | drsh, drss, rxsp, rxhp
+age _||_ dded | ddgh, drss, rxsp, rxhp
+age _||_ dded | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+age _||_ dded | ddgh, lacs, oth, pacs, pocs, tacs
+age _||_ dded | ddgs, drsh, rxsp, rxhp
+age _||_ dded | ddgh, ddgs
+age _||_ dded | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ ddgh | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ ddgs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ dpe | ddgh, lacs, oth, pacs, pocs, tacs
+age _||_ dpe | ddgh, ddgs
+age _||_ dpe | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ drsh | ddgh
+age _||_ drsh | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ drss | lacs, oth, pacs, pocs, tacs
+age _||_ drss | ddgs
+age _||_ drss | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ lacs | ddgs
+age _||_ lacs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ occd | dpe, drsh, drss, rxsp, rxhp
+age _||_ occd | ddgh, dpe, drss, rxsp, rxhp
+age _||_ occd | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+age _||_ occd | ddgh, lacs, oth, pacs, pocs, tacs
+age _||_ occd | ddgh, ddgs
+age _||_ occd | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ oth | ddgs
+age _||_ oth | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ pacs | ddgs
+age _||_ pacs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ pocs | ddgs
+age _||_ pocs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+age _||_ rxsp
+age _||_ rxhp
+age _||_ tacs | ddgs
+age _||_ tacs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+dded _||_ ddgh | drsh, rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, rxsp, rxhp
+dded _||_ ddgh | ddgs, drsh, rxsp, rxhp
+dded _||_ ddgh | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ ddgh | drsh, drss, rxsp, rxhp
+dded _||_ ddgs | lacs, oth, pacs, pocs, rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, tacs
+dded _||_ ddgs | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ ddgs | drss, rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, rxsp, rxhp
+dded _||_ ddgs | ddgh, drss, rxsp, rxhp
+dded _||_ ddgs | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ ddgs | drsh, drss, rxsp, rxhp
+dded _||_ dpe | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ dpe | ddgh, drss, rxsp, rxhp
+dded _||_ dpe | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ dpe | drsh, drss, rxsp, rxhp
+dded _||_ lacs | ddgs, drss, rxsp, rxhp
+dded _||_ lacs | drss, rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, rxsp, rxhp
+dded _||_ lacs | ddgh, drss, rxsp, rxhp
+dded _||_ lacs | drsh, drss, rxsp, rxhp
+dded _||_ oth | ddgs, drss, rxsp, rxhp
+dded _||_ oth | drss, rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, rxsp, rxhp
+dded _||_ oth | ddgh, drss, rxsp, rxhp
+dded _||_ oth | drsh, drss, rxsp, rxhp
+dded _||_ pacs | ddgs, drss, rxsp, rxhp
+dded _||_ pacs | drss, rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, rxsp, rxhp
+dded _||_ pacs | ddgh, drss, rxsp, rxhp
+dded _||_ pacs | drsh, drss, rxsp, rxhp
+dded _||_ pocs | ddgs, drss, rxsp, rxhp
+dded _||_ pocs | drss, rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, rxsp, rxhp
+dded _||_ pocs | ddgh, drss, rxsp, rxhp
+dded _||_ pocs | drsh, drss, rxsp, rxhp
+dded _||_ rdf1 | ddgh, ddgs
+dded _||_ rdf1 | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ rdf1 | ddgh, drss, rxsp, rxhp
+dded _||_ rdf1 | ddgs, drsh, rxsp, rxhp
+dded _||_ rdf1 | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ rdf1 | drsh, drss, rxsp, rxhp
+dded _||_ rdf2 | ddgh, ddgs
+dded _||_ rdf2 | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ rdf2 | ddgh, drss, rxsp, rxhp
+dded _||_ rdf2 | ddgs, drsh, rxsp, rxhp
+dded _||_ rdf2 | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ rdf2 | drsh, drss, rxsp, rxhp
+dded _||_ rdf3 | ddgh, ddgs
+dded _||_ rdf3 | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ rdf3 | ddgh, drss, rxsp, rxhp
+dded _||_ rdf3 | ddgs, drsh, rxsp, rxhp
+dded _||_ rdf3 | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ rdf3 | drsh, drss, rxsp, rxhp
+dded _||_ rdf4 | ddgh, ddgs
+dded _||_ rdf4 | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ rdf4 | ddgh, drss, rxsp, rxhp
+dded _||_ rdf4 | ddgs, drsh, rxsp, rxhp
+dded _||_ rdf4 | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ rdf4 | drsh, drss, rxsp, rxhp
+dded _||_ rdf5 | ddgh, ddgs
+dded _||_ rdf5 | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ rdf5 | ddgh, drss, rxsp, rxhp
+dded _||_ rdf5 | ddgs, drsh, rxsp, rxhp
+dded _||_ rdf5 | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ rdf5 | drsh, drss, rxsp, rxhp
+dded _||_ rdf6 | ddgh, ddgs
+dded _||_ rdf6 | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ rdf6 | ddgh, drss, rxsp, rxhp
+dded _||_ rdf6 | ddgs, drsh, rxsp, rxhp
+dded _||_ rdf6 | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ rdf6 | drsh, drss, rxsp, rxhp
+dded _||_ rdf7 | ddgh, ddgs
+dded _||_ rdf7 | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ rdf7 | ddgh, drss, rxsp, rxhp
+dded _||_ rdf7 | ddgs, drsh, rxsp, rxhp
+dded _||_ rdf7 | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ rdf7 | drsh, drss, rxsp, rxhp
+dded _||_ rdf8 | ddgh, ddgs
+dded _||_ rdf8 | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ rdf8 | ddgh, drss, rxsp, rxhp
+dded _||_ rdf8 | ddgs, drsh, rxsp, rxhp
+dded _||_ rdf8 | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ rdf8 | drsh, drss, rxsp, rxhp
+dded _||_ rsbp | ddgh, ddgs
+dded _||_ rsbp | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ rsbp | ddgh, drss, rxsp, rxhp
+dded _||_ rsbp | ddgs, drsh, rxsp, rxhp
+dded _||_ rsbp | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ rsbp | drsh, drss, rxsp, rxhp
+dded _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+dded _||_ sex | ddgh, ddgs
+dded _||_ sex | ddgh, lacs, oth, pacs, pocs, tacs
+dded _||_ sex | ddgh, drss, rxsp, rxhp
+dded _||_ sex | ddgs, drsh, rxsp, rxhp
+dded _||_ sex | drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+dded _||_ sex | drsh, drss, rxsp, rxhp
+dded _||_ tacs | ddgs, drss, rxsp, rxhp
+dded _||_ tacs | drss, rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, rxsp, rxhp
+dded _||_ tacs | ddgh, drss, rxsp, rxhp
+dded _||_ tacs | drsh, drss, rxsp, rxhp
+ddgh _||_ ddgs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+ddgh _||_ drss | lacs, oth, pacs, pocs, tacs
+ddgh _||_ drss | ddgs
+ddgh _||_ drss | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+ddgh _||_ lacs | ddgs
+ddgh _||_ lacs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+ddgh _||_ occd | dpe, drsh, drss, rxsp, rxhp
+ddgh _||_ occd | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+ddgh _||_ oth | ddgs
+ddgh _||_ oth | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+ddgh _||_ pacs | ddgs
+ddgh _||_ pacs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+ddgh _||_ pocs | ddgs
+ddgh _||_ pocs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+ddgh _||_ rxsp
+ddgh _||_ rxhp
+ddgh _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+ddgh _||_ tacs | ddgs
+ddgh _||_ tacs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+ddgs _||_ dpe | ddgh, lacs, oth, pacs, pocs, tacs
+ddgs _||_ dpe | lacs, oth, pacs, pocs, rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, tacs
+ddgs _||_ drsh | ddgh
+ddgs _||_ drsh | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+ddgs _||_ drss | lacs, oth, pacs, pocs, tacs
+ddgs _||_ occd | dpe, drsh, drss, rxsp, rxhp
+ddgs _||_ occd | ddgh, dpe, drss, rxsp, rxhp
+ddgs _||_ occd | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+ddgs _||_ occd | ddgh, lacs, oth, pacs, pocs, tacs
+ddgs _||_ occd | lacs, oth, pacs, pocs, rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, tacs
+ddgs _||_ rxsp
+ddgs _||_ rxhp
+ddgs _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+dpe _||_ drsh | ddgh
+dpe _||_ drss | lacs, oth, pacs, pocs, tacs
+dpe _||_ rdf1 | ddgh, ddgs
+dpe _||_ rdf1 | ddgh, lacs, oth, pacs, pocs, tacs
+dpe _||_ rdf2 | ddgh, ddgs
+dpe _||_ rdf2 | ddgh, lacs, oth, pacs, pocs, tacs
+dpe _||_ rdf3 | ddgh, ddgs
+dpe _||_ rdf3 | ddgh, lacs, oth, pacs, pocs, tacs
+dpe _||_ rdf4 | ddgh, ddgs
+dpe _||_ rdf4 | ddgh, lacs, oth, pacs, pocs, tacs
+dpe _||_ rdf5 | ddgh, ddgs
+dpe _||_ rdf5 | ddgh, lacs, oth, pacs, pocs, tacs
+dpe _||_ rdf6 | ddgh, ddgs
+dpe _||_ rdf6 | ddgh, lacs, oth, pacs, pocs, tacs
+dpe _||_ rdf7 | ddgh, ddgs
+dpe _||_ rdf7 | ddgh, lacs, oth, pacs, pocs, tacs
+dpe _||_ rdf8 | ddgh, ddgs
+dpe _||_ rdf8 | ddgh, lacs, oth, pacs, pocs, tacs
+dpe _||_ rsbp | ddgh, ddgs
+dpe _||_ rsbp | ddgh, lacs, oth, pacs, pocs, tacs
+dpe _||_ rxsp
+dpe _||_ rxhp
+dpe _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+dpe _||_ sex | ddgh, ddgs
+dpe _||_ sex | ddgh, lacs, oth, pacs, pocs, tacs
+drsh _||_ drss | lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+drsh _||_ drss | ddgs, rxsp, rxhp
+drsh _||_ drss | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp, rxsp, rxhp
+drsh _||_ drss | ddgh, rxsp, rxhp
+drsh _||_ lacs | ddgs
+drsh _||_ lacs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+drsh _||_ lacs | ddgh
+drsh _||_ oth | ddgs
+drsh _||_ oth | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+drsh _||_ oth | ddgh
+drsh _||_ pacs | ddgs
+drsh _||_ pacs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+drsh _||_ pacs | ddgh
+drsh _||_ pocs | ddgs
+drsh _||_ pocs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+drsh _||_ pocs | ddgh
+drsh _||_ rdf1 | ddgh
+drsh _||_ rdf2 | ddgh
+drsh _||_ rdf3 | ddgh
+drsh _||_ rdf4 | ddgh
+drsh _||_ rdf5 | ddgh
+drsh _||_ rdf6 | ddgh
+drsh _||_ rdf7 | ddgh
+drsh _||_ rdf8 | ddgh
+drsh _||_ rsbp | ddgh
+drsh _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+drsh _||_ sex | ddgh
+drsh _||_ tacs | ddgs
+drsh _||_ tacs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+drsh _||_ tacs | ddgh
+drss _||_ rdf1 | ddgs
+drss _||_ rdf1 | lacs, oth, pacs, pocs, tacs
+drss _||_ rdf2 | ddgs
+drss _||_ rdf2 | lacs, oth, pacs, pocs, tacs
+drss _||_ rdf3 | ddgs
+drss _||_ rdf3 | lacs, oth, pacs, pocs, tacs
+drss _||_ rdf4 | ddgs
+drss _||_ rdf4 | lacs, oth, pacs, pocs, tacs
+drss _||_ rdf5 | ddgs
+drss _||_ rdf5 | lacs, oth, pacs, pocs, tacs
+drss _||_ rdf6 | ddgs
+drss _||_ rdf6 | lacs, oth, pacs, pocs, tacs
+drss _||_ rdf7 | ddgs
+drss _||_ rdf7 | lacs, oth, pacs, pocs, tacs
+drss _||_ rdf8 | ddgs
+drss _||_ rdf8 | lacs, oth, pacs, pocs, tacs
+drss _||_ rsbp | ddgs
+drss _||_ rsbp | lacs, oth, pacs, pocs, tacs
+drss _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+drss _||_ sex | ddgs
+drss _||_ sex | lacs, oth, pacs, pocs, tacs
+lacs _||_ occd | dpe, drsh, drss, rxsp, rxhp
+lacs _||_ occd | ddgh, dpe, drss, rxsp, rxhp
+lacs _||_ oth | ddgs
+lacs _||_ pacs | ddgs
+lacs _||_ pocs | ddgs
+lacs _||_ rdf1 | ddgs
+lacs _||_ rdf2 | ddgs
+lacs _||_ rdf3 | ddgs
+lacs _||_ rdf4 | ddgs
+lacs _||_ rdf5 | ddgs
+lacs _||_ rdf6 | ddgs
+lacs _||_ rdf7 | ddgs
+lacs _||_ rdf8 | ddgs
+lacs _||_ rsbp | ddgs
+lacs _||_ rxsp
+lacs _||_ rxhp
+lacs _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+lacs _||_ sex | ddgs
+lacs _||_ tacs | ddgs
+occd _||_ oth | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ oth | dpe, drsh, drss, rxsp, rxhp
+occd _||_ pacs | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ pacs | dpe, drsh, drss, rxsp, rxhp
+occd _||_ pocs | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ pocs | dpe, drsh, drss, rxsp, rxhp
+occd _||_ rdf1 | ddgh, ddgs
+occd _||_ rdf1 | ddgh, lacs, oth, pacs, pocs, tacs
+occd _||_ rdf1 | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ rdf1 | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+occd _||_ rdf1 | dpe, drsh, drss, rxsp, rxhp
+occd _||_ rdf2 | ddgh, ddgs
+occd _||_ rdf2 | ddgh, lacs, oth, pacs, pocs, tacs
+occd _||_ rdf2 | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ rdf2 | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+occd _||_ rdf2 | dpe, drsh, drss, rxsp, rxhp
+occd _||_ rdf3 | ddgh, ddgs
+occd _||_ rdf3 | ddgh, lacs, oth, pacs, pocs, tacs
+occd _||_ rdf3 | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ rdf3 | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+occd _||_ rdf3 | dpe, drsh, drss, rxsp, rxhp
+occd _||_ rdf4 | ddgh, ddgs
+occd _||_ rdf4 | ddgh, lacs, oth, pacs, pocs, tacs
+occd _||_ rdf4 | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ rdf4 | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+occd _||_ rdf4 | dpe, drsh, drss, rxsp, rxhp
+occd _||_ rdf5 | ddgh, ddgs
+occd _||_ rdf5 | ddgh, lacs, oth, pacs, pocs, tacs
+occd _||_ rdf5 | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ rdf5 | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+occd _||_ rdf5 | dpe, drsh, drss, rxsp, rxhp
+occd _||_ rdf6 | ddgh, ddgs
+occd _||_ rdf6 | ddgh, lacs, oth, pacs, pocs, tacs
+occd _||_ rdf6 | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ rdf6 | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+occd _||_ rdf6 | dpe, drsh, drss, rxsp, rxhp
+occd _||_ rdf7 | ddgh, ddgs
+occd _||_ rdf7 | ddgh, lacs, oth, pacs, pocs, tacs
+occd _||_ rdf7 | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ rdf7 | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+occd _||_ rdf7 | dpe, drsh, drss, rxsp, rxhp
+occd _||_ rdf8 | ddgh, ddgs
+occd _||_ rdf8 | ddgh, lacs, oth, pacs, pocs, tacs
+occd _||_ rdf8 | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ rdf8 | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+occd _||_ rdf8 | dpe, drsh, drss, rxsp, rxhp
+occd _||_ rsbp | ddgh, ddgs
+occd _||_ rsbp | ddgh, lacs, oth, pacs, pocs, tacs
+occd _||_ rsbp | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ rsbp | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+occd _||_ rsbp | dpe, drsh, drss, rxsp, rxhp
+occd _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+occd _||_ sex | ddgh, ddgs
+occd _||_ sex | ddgh, lacs, oth, pacs, pocs, tacs
+occd _||_ sex | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ sex | dpe, drsh, lacs, oth, pacs, pocs, rxsp, rxhp, tacs
+occd _||_ sex | dpe, drsh, drss, rxsp, rxhp
+occd _||_ tacs | ddgh, dpe, drss, rxsp, rxhp
+occd _||_ tacs | dpe, drsh, drss, rxsp, rxhp
+oth _||_ pacs | ddgs
+oth _||_ pocs | ddgs
+oth _||_ rdf1 | ddgs
+oth _||_ rdf2 | ddgs
+oth _||_ rdf3 | ddgs
+oth _||_ rdf4 | ddgs
+oth _||_ rdf5 | ddgs
+oth _||_ rdf6 | ddgs
+oth _||_ rdf7 | ddgs
+oth _||_ rdf8 | ddgs
+oth _||_ rsbp | ddgs
+oth _||_ rxsp
+oth _||_ rxhp
+oth _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+oth _||_ sex | ddgs
+oth _||_ tacs | ddgs
+pacs _||_ pocs | ddgs
+pacs _||_ rdf1 | ddgs
+pacs _||_ rdf2 | ddgs
+pacs _||_ rdf3 | ddgs
+pacs _||_ rdf4 | ddgs
+pacs _||_ rdf5 | ddgs
+pacs _||_ rdf6 | ddgs
+pacs _||_ rdf7 | ddgs
+pacs _||_ rdf8 | ddgs
+pacs _||_ rsbp | ddgs
+pacs _||_ rxsp
+pacs _||_ rxhp
+pacs _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+pacs _||_ sex | ddgs
+pacs _||_ tacs | ddgs
+pocs _||_ rdf1 | ddgs
+pocs _||_ rdf2 | ddgs
+pocs _||_ rdf3 | ddgs
+pocs _||_ rdf4 | ddgs
+pocs _||_ rdf5 | ddgs
+pocs _||_ rdf6 | ddgs
+pocs _||_ rdf7 | ddgs
+pocs _||_ rdf8 | ddgs
+pocs _||_ rsbp | ddgs
+pocs _||_ rxsp
+pocs _||_ rxhp
+pocs _||_ sex | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp
+pocs _||_ sex | ddgs
+pocs _||_ tacs | ddgs
+rdf1 _||_ rdf2 | age, sex
+rdf1 _||_ rdf3 | age, sex
+rdf1 _||_ rdf4 | age, sex
+rdf1 _||_ rdf5 | age, sex
+rdf1 _||_ rdf6 | age, sex
+rdf1 _||_ rdf7 | age, sex
+rdf1 _||_ rdf8 | age, sex
+rdf1 _||_ rsbp | age, sex
+rdf1 _||_ rxsp
+rdf1 _||_ rxhp
+rdf1 _||_ tacs | ddgs
+rdf2 _||_ rdf3 | age, sex
+rdf2 _||_ rdf4 | age, sex
+rdf2 _||_ rdf5 | age, sex
+rdf2 _||_ rdf6 | age, sex
+rdf2 _||_ rdf7 | age, sex
+rdf2 _||_ rdf8 | age, sex
+rdf2 _||_ rsbp | age, sex
+rdf2 _||_ rxsp
+rdf2 _||_ rxhp
+rdf2 _||_ tacs | ddgs
+rdf3 _||_ rdf4 | age, sex
+rdf3 _||_ rdf5 | age, sex
+rdf3 _||_ rdf6 | age, sex
+rdf3 _||_ rdf7 | age, sex
+rdf3 _||_ rdf8 | age, sex
+rdf3 _||_ rsbp | age, sex
+rdf3 _||_ rxsp
+rdf3 _||_ rxhp
+rdf3 _||_ tacs | ddgs
+rdf4 _||_ rdf5 | age, sex
+rdf4 _||_ rdf6 | age, sex
+rdf4 _||_ rdf7 | age, sex
+rdf4 _||_ rdf8 | age, sex
+rdf4 _||_ rsbp | age, sex
+rdf4 _||_ rxsp
+rdf4 _||_ rxhp
+rdf4 _||_ tacs | ddgs
+rdf5 _||_ rdf6 | age, sex
+rdf5 _||_ rdf7 | age, sex
+rdf5 _||_ rdf8 | age, sex
+rdf5 _||_ rsbp | age, sex
+rdf5 _||_ rxsp
+rdf5 _||_ rxhp
+rdf5 _||_ tacs | ddgs
+rdf6 _||_ rdf7 | age, sex
+rdf6 _||_ rdf8 | age, sex
+rdf6 _||_ rsbp | age, sex
+rdf6 _||_ rxsp
+rdf6 _||_ rxhp
+rdf6 _||_ tacs | ddgs
+rdf7 _||_ rdf8 | age, sex
+rdf7 _||_ rsbp | age, sex
+rdf7 _||_ rxsp
+rdf7 _||_ rxhp
+rdf7 _||_ tacs | ddgs
+rdf8 _||_ rsbp | age, sex
+rdf8 _||_ rxsp
+rdf8 _||_ rxhp
+rdf8 _||_ tacs | ddgs
+rsbp _||_ rxsp
+rsbp _||_ rxhp
+rsbp _||_ tacs | ddgs
+rxsp _||_ rxhp
+rxsp _||_ sex
+rxsp _||_ tacs
+rxhp _||_ sex
+rxhp _||_ tacs
+sex _||_ tacs | ddgs
+sex _||_ tacs | rdf1, rdf2, rdf3, rdf4, rdf5, rdf6, rdf7, rdf8, rsbp

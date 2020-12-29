@@ -104,23 +104,141 @@ tacs -> drsisc
 }
 '
 
+str_graph = 'dag {
+Age [pos="-0.231,-1.360"]
+DDEAD [pos="-0.810,0.699"]
+DDIAGHA [pos="0.435,-0.419"]
+DDIAGISC [pos="-1.506,-0.446"]
+DPE [pos="-0.332,0.183"]
+DRSH [pos="-0.069,0.480"]
+DRSISC [pos="-1.314,0.531"]
+LACS [pos="-0.863,-0.192"]
+OCCODE [pos="-0.392,1.250"]
+OTH [pos="-0.475,-0.196"]
+PACS [pos="-1.630,-0.196"]
+POCS [pos="-1.250,-0.192"]
+RXASP [pos="-2.142,0.203"]
+RXHEP [pos="0.390,0.209"]
+Sex [pos="-0.874,-1.347"]
+TACS [pos="-2.033,-0.194"]
+rdef1 [pos="-1.077,-0.772"]
+rdef2 [pos="-0.827,-0.773"]
+rdef3 [pos="-0.577,-0.775"]
+rdef4 [pos="-0.324,-0.777"]
+rdef5 [pos="-0.077,-0.779"]
+rdef6 [pos="0.173,-0.779"]
+rdef7 [pos="0.420,-0.779"]
+rdef8 [pos="0.664,-0.783"]
+rsbp [pos="-1.834,-0.777"]
+Age -> rdef1
+Age -> rdef2
+Age -> rdef3
+Age -> rdef4
+Age -> rdef5
+Age -> rdef6
+Age -> rdef7
+Age -> rdef8
+Age -> rsbp
+DDEAD -> OCCODE
+DDIAGHA -> DPE
+DDIAGHA -> DRSH
+DDIAGISC -> LACS
+DDIAGISC -> OTH
+DDIAGISC -> PACS
+DDIAGISC -> POCS
+DDIAGISC -> TACS
+DPE -> OCCODE
+DRSH -> DDEAD
+DRSH -> OCCODE
+DRSISC -> DDEAD
+DRSISC -> OCCODE
+LACS -> DPE
+LACS -> DRSISC
+OTH -> DPE
+OTH -> DRSISC
+PACS -> DPE
+PACS -> DRSISC
+POCS -> DPE
+POCS -> DRSISC
+RXASP -> DDEAD
+RXASP -> DRSH
+RXASP -> DRSISC
+RXASP -> OCCODE
+RXHEP -> DDEAD
+RXHEP -> DRSH
+RXHEP -> DRSISC
+RXHEP -> OCCODE
+Sex -> Age
+Sex -> rdef1
+Sex -> rdef2
+Sex -> rdef3
+Sex -> rdef4
+Sex -> rdef5
+Sex -> rdef6
+Sex -> rdef7
+Sex -> rdef8
+Sex -> rsbp
+TACS -> DPE
+TACS -> DRSISC
+rdef1 -> DDIAGHA
+rdef1 -> DDIAGISC
+rdef2 -> DDIAGHA
+rdef2 -> DDIAGISC
+rdef3 -> DDIAGHA
+rdef3 -> DDIAGISC
+rdef4 -> DDIAGHA
+rdef4 -> DDIAGISC
+rdef5 -> DDIAGHA
+rdef5 -> DDIAGISC
+rdef6 -> DDIAGHA
+rdef6 -> DDIAGISC
+rdef7 -> DDIAGHA
+rdef7 -> DDIAGISC
+rdef8 -> DDIAGHA
+rdef8 -> DDIAGISC
+rsbp -> DDIAGHA
+rsbp -> DDIAGISC
+}
+'
+
 library(dagitty)
 library(batyesianNetworks)
 library(bnlearn)
 library( bayesianNetworks )
-source("funcitons.R")
 
-data = read.csv("data_cleaned.csv")
+
+data = read.csv("IST_corrected_processed.csv")
 data = data[ , -which(names(data) %in% c("ddiagun","dnostrk"))]
-names(data) = tolowernames(data)
-c(-Inf,seq(0,100,by=10),Inf)
-data$age.bin = cut(data$age, breaks = c(-Inf,seq(-1,99,by=10),Inf),labels=seq(-10,100,by=10))
-data$age.bin = as.numeric(data$age.bin)
+names(data) = tolower(names(data))
+
+str_graph <- tolower(str_graph)
 g1 = dagitty(str_graph)
 g2 = graphLayout(g1)
 
 sort(names(data))
-sort(names(g2))
+sort(names(g1))
+
+
+options(max.print=1000000)
+output = localTests(g1, data, type="cis.chisq", max.conditioning.variables=16)
+sink('analysis-output.txt', append=FALSE)
+output
+sink()
+
+sink('implied_indep.txt', append=FALSE)
+impliedConditionalIndependencies(g1)
+sink()
+
+c(-Inf,seq(0,100,by=10),Inf)
+data$age.bin = cut(data$age, breaks = c(-Inf,seq(-1,99,by=10),Inf),labels=seq(-10,100,by=10))
+data$age.bin = as.numeric(data$age.bin)
+
+data$rsbp.bin = cut(data$rsbp, breaks = c(-Inf,seq(50,300,by=25),Inf),labels=seq(50-25,300,by=25))
+data$rsbp.bin = as.numeric(data$rsbp.bin)
+hist(data$rsbp.bin)
+data$rsbp.bin
+
+
 
 
 
@@ -150,7 +268,7 @@ source("funcitons.R")
 
 dep.matrix = matrix(nrow = 8, ncol = 8,0)
 
-n=3
+n=1
 
 dep.matrix[1,1] <- chisq_given(data, data$rdef1, data$rdef1 ,data$sex,data$age.bin)[n]
 dep.matrix[1,2] <- chisq_given(data, data$rdef1, data$rdef2 ,data$sex,data$age.bin)[n]
@@ -217,5 +335,22 @@ dep.matrix[8,6] <- chisq_given(data, data$rdef8, data$rdef6 ,data$sex,data$age.b
 dep.matrix[8,7] <- chisq_given(data, data$rdef8, data$rdef7 ,data$sex,data$age.bin)[n]
 dep.matrix[8,8] <- chisq_given(data, data$rdef8, data$rdef8 ,data$sex,data$age.bin)[n]
 
+dep.matrix.rbsp = matrix(1,8)
+dep.matrix.rbsp[1,1]<-chisq_given(data, data$rsbp.bin, data$rdef1 ,data$sex,data$age.bin)[3]
+dep.matrix.rbsp[2,1]<-chisq_given(data, data$rsbp.bin, data$rdef2 ,data$sex,data$age.bin)[3]
+dep.matrix.rbsp[3,1]<-chisq_given(data, data$rsbp.bin, data$rdef3 ,data$sex,data$age.bin)[3]
+dep.matrix.rbsp[4,1]<-chisq_given(data, data$rsbp.bin, data$rdef4 ,data$sex,data$age.bin)[3]
+dep.matrix.rbsp[5,1]<-chisq_given(data, data$rsbp.bin, data$rdef5 ,data$sex,data$age.bin)[3]
+dep.matrix.rbsp[6,1]<-chisq_given(data, data$rsbp.bin, data$rdef6 ,data$sex,data$age.bin)[3]
+dep.matrix.rbsp[7,1]<-chisq_given(data, data$rsbp.bin, data$rdef7 ,data$sex,data$age.bin)[3]
+dep.matrix.rbsp[8,1]<-chisq_given(data, data$rsbp.bin, data$rdef8 ,data$sex,data$age.bin)[3]
 
 
+chisq.test(  data$rxhep,  data$rxasp )
+
+
+source("funcitons.R")
+chisq_given(data, data$occode, data$sex ,data$tacs,data$pacs,data$pocs,data$lacs,data$oth,data$rxhep,data$rxasp,data$ddiagha)
+
+
+pchisq(7.181912e+02  ,2.100000e+01,lower.tail = F)

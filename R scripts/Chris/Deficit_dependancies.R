@@ -1,8 +1,11 @@
 library(dagitty)
+library(batyesianNetworks)
+library(bnlearn)
+library( bayesianNetworks )
+library(lavaan)
+source("funcitons.R")
 
-g <- dagitty('
-dag {
-Age [pos="-0.231,-1.360"]
+str_graph = 'dag {
 DDEAD [pos="-0.810,0.699"]
 DDIAGHA [pos="0.435,-0.419"]
 DDIAGISC [pos="-1.506,-0.446"]
@@ -26,22 +29,9 @@ rdef5 [pos="-0.077,-0.779"]
 rdef6 [pos="0.173,-0.779"]
 rdef7 [pos="0.420,-0.779"]
 rdef8 [pos="0.664,-0.783"]
-rdef_u [pos="1.010,-0.783"]
-rsbp [pos="-1.834,-0.777"]
-Age -> rdef1
-Age -> rdef2
-Age -> rdef3
-Age -> rdef4
-Age -> rdef5
-Age -> rdef6
-Age -> rdef7
-Age -> rdef8
-Age -> rdef_u
-Age -> rsbp
 DDEAD -> OCCODE
 DDIAGHA -> DPE
 DDIAGHA -> DRSH
-DDIAGHA <-> DDIAGISC
 DDIAGISC -> LACS
 DDIAGISC -> OTH
 DDIAGISC -> PACS
@@ -54,14 +44,10 @@ DRSISC -> DDEAD
 DRSISC -> OCCODE
 LACS -> DPE
 LACS -> DRSISC
-LACS <-> OTH
-LACS <-> POCS
 OTH -> DPE
 OTH -> DRSISC
 PACS -> DPE
 PACS -> DRSISC
-PACS <-> POCS
-PACS <-> TACS
 POCS -> DPE
 POCS -> DRSISC
 RXASP -> DDEAD
@@ -72,7 +58,6 @@ RXHEP -> DDEAD
 RXHEP -> DRSH
 RXHEP -> DRSISC
 RXHEP -> OCCODE
-Sex -> Age
 Sex -> rdef1
 Sex -> rdef2
 Sex -> rdef3
@@ -81,8 +66,6 @@ Sex -> rdef5
 Sex -> rdef6
 Sex -> rdef7
 Sex -> rdef8
-Sex -> rdef_u
-Sex -> rsbp
 TACS -> DPE
 TACS -> DRSISC
 rdef1 -> DDIAGHA
@@ -93,7 +76,6 @@ rdef3 -> DDIAGHA
 rdef3 -> DDIAGISC
 rdef4 -> DDIAGHA
 rdef4 -> DDIAGISC
-rdef4 -> rdef3
 rdef5 -> DDIAGHA
 rdef5 -> DDIAGISC
 rdef6 -> DDIAGHA
@@ -102,31 +84,79 @@ rdef7 -> DDIAGHA
 rdef7 -> DDIAGISC
 rdef8 -> DDIAGHA
 rdef8 -> DDIAGISC
-rdef_u -> DDIAGHA
-rdef_u -> DDIAGISC
-rsbp -> DDIAGHA
-rsbp -> DDIAGISC
+rdef1 -> TACS
+rdef1 -> PACS
+rdef1 -> POCS
+rdef1 -> LACS
+rdef1 -> OTH
+rdef2 -> TACS
+rdef2 -> PACS
+rdef2 -> POCS
+rdef2 -> LACS
+rdef2 -> OTH
+rdef3 -> TACS
+rdef3 -> PACS
+rdef3 -> POCS
+rdef3 -> LACS
+rdef3 -> OTH
+rdef4 -> TACS
+rdef4 -> PACS
+rdef4 -> POCS
+rdef4 -> LACS
+rdef4 -> OTH
+rdef5 -> TACS
+rdef5 -> PACS
+rdef5 -> POCS
+rdef5 -> LACS
+rdef5 -> OTH
+rdef6 -> TACS
+rdef6 -> PACS
+rdef6 -> POCS
+rdef6 -> LACS
+rdef6 -> OTH
+rdef7 -> TACS
+rdef7 -> PACS
+rdef7 -> POCS
+rdef7 -> LACS
+rdef7 -> OTH
+rdef8 -> TACS
+rdef8 -> PACS
+rdef8 -> POCS
+rdef8 -> LACS
+rdef8 -> OTH
 }
+'
 
-')
+dag <- dagitty(str_graph)
+dag <- tolower(dag)
 
-plot(g)
-
-data = read.csv("data_cleaned.csv")
-g2 = graphLayout(g)
-
-#sum(paths(g,"Sex","Age",limit=100)$open)
+data = read.csv("IST_corrected_processed.csv")
 
 
-for(name in names(data)[0:4]){
-print(name)
-print(chisq.test(data$rxhep,data[name][,1]))
-}
+age.bin = cut(data$age, breaks = c(-Inf,seq(-1,99,by=10),Inf),labels=seq(-10,100,by=10))
+data$age = data$age/100
+
+rsbp.bin = cut(data$rsbp, breaks = c(-Inf,seq(50,300,by=25),Inf),labels=seq(50-25,300,by=25))
+data$rsbp = data$rsbp/100
+
+data = data[ , -which(names(data) %in% c("ddiagun","dnostrk","rsbp","age"))]
+names(data) = tolower(names(data))
+
+head(data)
+
+vartable(data)
+
+M <- lavCor(data)
+
+M
 
 
-impliedConditionalIndependencies(g)
+
+plot(dag)
 
 
+fit <- sem( toString(dag,"lavaan"), sample.cov=M, sample.nobs=nrow(data) )
 
-
-
+ordered(row.names(M))
+ordered(names(data))
+ordered(names(dag))
