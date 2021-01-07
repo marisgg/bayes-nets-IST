@@ -1,0 +1,166 @@
+================================================================================
+FGES (Tue, January 05, 2021 04:53:10 pm)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: IST_corrected_processed.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FGES
+score: DG-BIC (Degenerate Gaussian BIC Score)
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+faithfulnessAssumed: no
+maxDegree: 100
+penaltyDiscount: 1.0
+structurePrior: 1.0
+symmetricFirstStep: no
+verbose: yes
+
+
+Tue, January 05, 2021 04:53:10 pm: Start data validation on file IST_corrected_processed.csv.
+Tue, January 05, 2021 04:53:10 pm: End data validation on file IST_corrected_processed.csv.
+There are 13733 cases and 27 variables.
+
+Tue, January 05, 2021 04:53:10 pm: Start reading in file IST_corrected_processed.csv.
+Tue, January 05, 2021 04:53:10 pm: Finished reading in file IST_corrected_processed.csv.
+Tue, January 05, 2021 04:53:10 pm: File IST_corrected_processed.csv contains 13733 cases, 27 variables.
+
+Start search: Tue, January 05, 2021 04:53:10 pm
+--------------------------------------------------------------------------------
+Elapsed initializeForwardEdgesFromEmptyGraph = 2895 ms
+** FORWARD EQUIVALENCE SEARCH
+** BACKWARD EQUIVALENCE SEARCH
+** FORWARD EQUIVALENCE SEARCH
+** BACKWARD EQUIVALENCE SEARCH
+--------------------------------------------------------------------------------
+End search: Tue, January 05, 2021 04:57:28 pm
+
+================================================================================
+Graph Nodes:
+rdef1;rdef2;rdef3;rdef4;rdef5;rdef6;rdef7;rdef8;rxasp;rxhep;ddiagisc;ddiagha;ddiagun;dnostrk;drsisc;drsh;dpe;ddead;age;sex;rsbp;occode;LACS;OTH;PACS;POCS;TACS
+
+Graph Edges:
+1. LACS --> PACS
+2. LACS --> rdef2
+3. OTH --> LACS
+4. OTH --> PACS
+5. OTH --> POCS
+6. OTH --> rdef1
+7. OTH --> rdef2
+8. OTH --> rdef3
+9. OTH --> rdef8
+10. PACS --> rdef2
+11. PACS --> rdef3
+12. POCS --> LACS
+13. POCS --> PACS
+14. POCS --> rdef1
+15. POCS --> rdef2
+16. POCS --> rdef3
+17. POCS --> rdef5
+18. POCS --> rdef7
+19. TACS --> LACS
+20. TACS --> PACS
+21. TACS --> POCS
+22. TACS --> ddead
+23. TACS --> ddiagisc
+24. TACS --> dpe
+25. TACS --> rdef1
+26. TACS --> rdef4
+27. TACS --> rdef5
+28. TACS --> rdef8
+29. age --> POCS
+30. age --> ddead
+31. age --> dnostrk
+32. age --> drsh
+33. age --> occode
+34. age --> rdef1
+35. age --> rdef2
+36. age --> rdef4
+37. age --> rdef6
+38. age --> sex
+39. ddead --> dnostrk
+40. ddead --> dpe
+41. ddead --> drsh
+42. ddead --> rdef2
+43. ddiagha --> ddiagisc
+44. ddiagun --> age
+45. ddiagun --> ddead
+46. ddiagun --> ddiagha
+47. ddiagun --> ddiagisc
+48. ddiagun --> dnostrk
+49. ddiagun --> occode
+50. dnostrk --> ddiagisc
+51. drsh --> ddiagha
+52. drsh --> rxhep
+53. drsisc --> TACS
+54. drsisc --> ddead
+55. drsisc --> occode
+56. occode --> TACS
+57. occode --> ddead
+58. occode --> dnostrk
+59. occode --> drsh
+60. occode --> rdef1
+61. occode --> rdef2
+62. occode --> rdef3
+63. occode --> rdef4
+64. occode --> rdef5
+65. occode --> rdef6
+66. occode --> rdef8
+67. rdef1 --> dnostrk
+68. rdef2 --> dnostrk
+69. rdef2 --> rdef1
+70. rdef2 --> rdef3
+71. rdef3 --> ddiagha
+72. rdef3 --> dnostrk
+73. rdef3 --> rdef1
+74. rdef3 --> sex
+75. rdef4 --> LACS
+76. rdef4 --> OTH
+77. rdef4 --> POCS
+78. rdef4 --> rdef1
+79. rdef4 --> rdef2
+80. rdef4 --> rdef5
+81. rdef4 --> rdef7
+82. rdef5 --> LACS
+83. rdef5 --> ddiagha
+84. rdef5 --> rdef2
+85. rdef6 --> LACS
+86. rdef6 --> OTH
+87. rdef6 --> TACS
+88. rdef6 --> rdef1
+89. rdef6 --> rdef2
+90. rdef6 --> rdef3
+91. rdef6 --> rdef4
+92. rdef6 --> rdef5
+93. rdef6 --> rdef8
+94. rdef6 --> sex
+95. rdef7 --> LACS
+96. rdef7 --> ddead
+97. rdef7 --> rdef1
+98. rdef7 --> rdef2
+99. rdef7 --> rdef5
+100. rdef7 --> rdef8
+101. rdef7 --> sex
+102. rdef8 --> LACS
+103. rsbp --> age
+104. rsbp --> ddiagha
+105. rsbp --> occode
+106. rsbp --> rdef6
+107. rsbp --> sex
+108. rxasp --- drsisc
+
+Graph Attributes:
+BIC: 0,000000

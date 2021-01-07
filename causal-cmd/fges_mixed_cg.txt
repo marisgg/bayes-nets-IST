@@ -1,0 +1,128 @@
+================================================================================
+FGES (Tue, January 05, 2021 12:36:45 pm)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: IST_corrected_processed.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FGES
+score: CG-BIC (Conditional Gaussian BIC Score)
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+discretize: no
+faithfulnessAssumed: no
+maxDegree: 100
+numCategoriesToDiscretize: 3
+penaltyDiscount: 1.0
+structurePrior: 1.0
+symmetricFirstStep: no
+verbose: yes
+
+
+Tue, January 05, 2021 12:36:46 pm: Start data validation on file IST_corrected_processed.csv.
+Tue, January 05, 2021 12:36:46 pm: End data validation on file IST_corrected_processed.csv.
+There are 13733 cases and 27 variables.
+
+Tue, January 05, 2021 12:36:46 pm: Start reading in file IST_corrected_processed.csv.
+Tue, January 05, 2021 12:36:46 pm: Finished reading in file IST_corrected_processed.csv.
+Tue, January 05, 2021 12:36:46 pm: File IST_corrected_processed.csv contains 13733 cases, 27 variables.
+
+Start search: Tue, January 05, 2021 12:36:46 pm
+--------------------------------------------------------------------------------
+Elapsed initializeForwardEdgesFromEmptyGraph = 2707 ms
+** FORWARD EQUIVALENCE SEARCH
+** BACKWARD EQUIVALENCE SEARCH
+** FORWARD EQUIVALENCE SEARCH
+** BACKWARD EQUIVALENCE SEARCH
+--------------------------------------------------------------------------------
+End search: Tue, January 05, 2021 12:37:51 pm
+
+================================================================================
+Graph Nodes:
+rdef1;rdef2;rdef3;rdef4;rdef5;rdef6;rdef7;rdef8;rxasp;rxhep;ddiagisc;ddiagha;ddiagun;dnostrk;drsisc;drsh;dpe;ddead;age;sex;rsbp;occode;LACS;OTH;PACS;POCS;TACS
+
+Graph Edges:
+1. LACS --> PACS
+2. LACS --> POCS
+3. LACS --> occode
+4. LACS --> rdef8
+5. OTH --> PACS
+6. PACS --> age
+7. PACS --> rdef4
+8. POCS --> OTH
+9. POCS --> PACS
+10. POCS --> rdef4
+11. POCS --> rdef7
+12. TACS --> PACS
+13. TACS --> POCS
+14. TACS --> occode
+15. TACS --- rdef1
+16. TACS --- rdef2
+17. TACS --- rdef3
+18. TACS --> rdef5
+19. TACS --- rdef6
+20. TACS --> rdef8
+21. age --> ddead
+22. age --> ddiagun
+23. age --> dnostrk
+24. age --> drsh
+25. age --> rsbp
+26. age --> sex
+27. ddead --> ddiagun
+28. ddead --> dpe
+29. ddiagha --> ddiagisc
+30. ddiagisc --> drsisc
+31. ddiagun --> ddiagha
+32. ddiagun --> ddiagisc
+33. dnostrk --> ddiagisc
+34. dpe --> sex
+35. drsisc --> rxasp
+36. occode --> age
+37. occode --> ddead
+38. occode --> drsh
+39. occode --> drsisc
+40. occode --> rsbp
+41. rdef1 --> LACS
+42. rdef1 --> POCS
+43. rdef1 --> age
+44. rdef2 --> LACS
+45. rdef2 --> OTH
+46. rdef2 --> POCS
+47. rdef2 --> dnostrk
+48. rdef2 --- rdef1
+49. rdef2 --> rdef4
+50. rdef2 --> rdef5
+51. rdef2 --> rdef7
+52. rdef3 --> LACS
+53. rdef3 --> POCS
+54. rdef3 --> ddiagha
+55. rdef3 --> occode
+56. rdef3 --- rdef1
+57. rdef3 --- rdef2
+58. rdef3 --> rdef4
+59. rdef3 --> sex
+60. rdef5 --> LACS
+61. rdef5 --> rdef4
+62. rdef5 --> rdef7
+63. rdef5 --> rsbp
+64. rdef6 --> LACS
+65. rdef6 --> rdef4
+66. rdef6 --> rdef5
+67. rdef8 --> OTH
+68. rsbp --> sex
+
+Graph Attributes:
+BIC: 0,000000

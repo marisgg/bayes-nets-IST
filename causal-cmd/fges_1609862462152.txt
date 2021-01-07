@@ -1,0 +1,46 @@
+================================================================================
+FGES (Tue, January 05, 2021 05:01:03 pm)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: IST_corrected_processed.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FGES
+score: DG-BIC (Degenerate Gaussian BIC Score)
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+faithfulnessAssumed: no
+maxDegree: 100
+penaltyDiscount: 1.0
+structurePrior: 1.0
+symmetricFirstStep: no
+verbose: yes
+
+
+Tue, January 05, 2021 05:01:03 pm: Start reading in file varfile.txt.
+Tue, January 05, 2021 05:01:03 pm: Finished reading in file varfile.txt.
+Tue, January 05, 2021 05:01:03 pm: Start data validation on file IST_corrected_processed.csv.
+Tue, January 05, 2021 05:01:03 pm: End data validation on file IST_corrected_processed.csv.
+There are 13733 cases and 27 variables.
+
+Tue, January 05, 2021 05:01:03 pm: Start reading in file varfile.txt.
+Tue, January 05, 2021 05:01:03 pm: Finished reading in file varfile.txt.
+Tue, January 05, 2021 05:01:03 pm: Start reading in file IST_corrected_processed.csv.
+Tue, January 05, 2021 05:01:03 pm: Finished reading in file IST_corrected_processed.csv.
+Tue, January 05, 2021 05:01:03 pm: File IST_corrected_processed.csv contains 13733 cases, 27 variables.
+
+Start search: Tue, January 05, 2021 05:01:03 pm
+--------------------------------------------------------------------------------
