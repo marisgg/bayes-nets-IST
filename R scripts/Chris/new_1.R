@@ -16,5 +16,6 @@ GM <- pcalg::pc(suffStat,
            ## independence test: G^2 statistic
            indepTest = gaussCItest, alpha = 0.05, p=ncol(data),labels =colnames(data), verbose = TRUE)
 
+
 plot(GM)
 
