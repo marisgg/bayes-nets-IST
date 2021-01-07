@@ -1,7 +1,8 @@
 library("bnlearn")
 library("pcalg")
 library("qgraph")
-data = read.csv("IST_corrected_processed.csv")
+data = read.csv("C:\\Users\\mosse\\Documents\\GitHub\\bayes-nets-IST\\Assignement_2\\Chris\\IST_corrected_processed.csv")
+
 
 data = data[ , -which(names(data) %in% c("ddiagun","dnostrk"))]
 
@@ -70,13 +71,11 @@ GMlayout[90,2] = ddiagun
 
 
 
-suffStat = list(C = cor(data), n = nrow(data)
+suffStat = list(C = cor(data), n = nrow(data))
 ## estimate CPDAG
 GM <- pc(suffStat,
                 ## independence test: G^2 statistic
-                indepTest = disCItest , alpha = 0.01, p=ncol(data),labels =colnames(data), verbose = TRUE)
-
-
+                indepTest = gaussCItest , alpha = 0.01, p=ncol(data),labels =colnames(data), verbose = TRUE)
 
 
 curvelayout = matrix(0,28,28)
