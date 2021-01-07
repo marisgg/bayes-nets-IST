@@ -1,7 +1,7 @@
 library("bnlearn")
 library("pcalg")
 library("qgraph")
-data = read.csv("C:\\Users\\mosse\\Documents\\GitHub\\bayes-nets-IST\\Assignement_2\\Chris\\IST_corrected_processed.csv")
+data = read.csv("IST_corrected_processed.csv")
 
 
 data = data[ , -which(names(data) %in% c("ddiagun","dnostrk"))]
