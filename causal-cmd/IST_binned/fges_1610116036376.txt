@@ -1,0 +1,119 @@
+================================================================================
+FGES (Fri, January 08, 2021 03:27:17 pm)
+================================================================================
+
+Runtime Parameters
+--------------------------------------------------------------------------------
+number of threads: 7
+
+Dataset
+--------------------------------------------------------------------------------
+file: IST_binned.csv
+header: yes
+delimiter: comma
+quote char: none
+missing marker: none
+comment marker: none
+
+Algorithm Run
+--------------------------------------------------------------------------------
+algorithm: FGES
+score: BDeu Score
+
+Algorithm Parameters
+--------------------------------------------------------------------------------
+faithfulnessAssumed: no
+maxDegree: 100
+priorEquivalentSampleSize: 10.0
+structurePrior: 1.0
+symmetricFirstStep: no
+verbose: yes
+
+
+Fri, January 08, 2021 03:27:17 pm: Start data validation on file IST_binned.csv.
+Fri, January 08, 2021 03:27:17 pm: End data validation on file IST_binned.csv.
+There are 13733 cases and 26 variables.
+
+Fri, January 08, 2021 03:27:17 pm: Start reading in file IST_binned.csv.
+Fri, January 08, 2021 03:27:17 pm: Finished reading in file IST_binned.csv.
+Fri, January 08, 2021 03:27:17 pm: File IST_binned.csv contains 13733 cases, 26 variables.
+
+Start search: Fri, January 08, 2021 03:27:18 pm
+--------------------------------------------------------------------------------
+Elapsed initializeForwardEdgesFromEmptyGraph = 362 ms
+** FORWARD EQUIVALENCE SEARCH
+** BACKWARD EQUIVALENCE SEARCH
+** FORWARD EQUIVALENCE SEARCH
+** BACKWARD EQUIVALENCE SEARCH
+--------------------------------------------------------------------------------
+End search: Fri, January 08, 2021 03:27:19 pm
+
+================================================================================
+Graph Nodes:
+"";"rdef1";"rdef2";"rdef3";"rdef4";"rdef5";"rdef6";"rdef7";"rdef8";"rxasp";"rxhep";"ddiagisc";"ddiagha";"drsisc";"drsh";"dpe";"ddead";"age";"sex";"rsbp";"occode";"LACS";"OTH";"PACS";"POCS";"TACS"
+
+Graph Edges:
+1. "LACS" --> "PACS"
+2. "LACS" --> "POCS"
+3. "LACS" --> "ddead"
+4. "LACS" --> "occode"
+5. "LACS" --> "rdef8"
+6. "OTH" --> "PACS"
+7. "OTH" --> "POCS"
+8. "OTH" --> "rdef7"
+9. "PACS" --> "ddead"
+10. "PACS" --> "rdef4"
+11. "POCS" --> "PACS"
+12. "POCS" --> "rdef4"
+13. "POCS" --> "rdef7"
+14. "TACS" --> "PACS"
+15. "TACS" --> "POCS"
+16. "TACS" --> "occode"
+17. "TACS" --> "rdef1"
+18. "TACS" --- "rdef2"
+19. "TACS" --> "rdef5"
+20. "TACS" --- "rdef6"
+21. "TACS" --> "rdef8"
+22. "age" --> "ddiagisc"
+23. "age" --> "sex"
+24. "ddead" --> "dpe"
+25. "ddead" --> "drsh"
+26. "ddiagha" --> "ddiagisc"
+27. "drsh" --> "ddiagha"
+28. "occode" --> "age"
+29. "occode" --> "ddead"
+30. "occode" --> "dpe"
+31. "occode" --> "drsisc"
+32. "rdef1" --> "LACS"
+33. "rdef1" --> "OTH"
+34. "rdef1" --> "POCS"
+35. "rdef1" --> "rdef4"
+36. "rdef1" --> "rdef7"
+37. "rdef2" --> "LACS"
+38. "rdef2" --> "OTH"
+39. "rdef2" --> "POCS"
+40. "rdef2" --> "rdef1"
+41. "rdef2" --> "rdef4"
+42. "rdef2" --> "rdef5"
+43. "rdef2" --> "rdef7"
+44. "rdef3" --> "LACS"
+45. "rdef3" --> "POCS"
+46. "rdef3" --- "TACS"
+47. "rdef3" --> "ddiagha"
+48. "rdef3" --> "occode"
+49. "rdef3" --> "rdef1"
+50. "rdef3" --- "rdef2"
+51. "rdef3" --> "rdef4"
+52. "rdef3" --> "rdef5"
+53. "rdef5" --> "LACS"
+54. "rdef5" --> "rdef1"
+55. "rdef5" --> "rdef4"
+56. "rdef5" --> "rdef7"
+57. "rdef6" --> "LACS"
+58. "rdef6" --> "rdef4"
+59. "rdef6" --> "rdef5"
+60. "rdef8" --> "OTH"
+61. "rdef8" --> "rdef4"
+
+Graph Attributes:
+BIC: 0,000000
