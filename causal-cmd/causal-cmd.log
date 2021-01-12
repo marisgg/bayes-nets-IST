@@ -86,3 +86,34 @@
 2021-01-05 17:01:03 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file IST_corrected_processed.csv.
 2021-01-05 17:01:03 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file IST_corrected_processed.csv.
 2021-01-05 17:01:03 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File IST_corrected_processed.csv contains 13733 cases, 27 variables.
+2021-01-08 15:24:19 INFO  org.reflections.Reflections:229 - Reflections took 110 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-08 15:24:20 INFO  org.reflections.Reflections:229 - Reflections took 17 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-08 15:24:20 INFO  org.reflections.Reflections:229 - Reflections took 13 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-08 15:24:38 INFO  org.reflections.Reflections:229 - Reflections took 99 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-08 15:24:38 INFO  org.reflections.Reflections:229 - Reflections took 17 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-08 15:24:38 INFO  org.reflections.Reflections:229 - Reflections took 13 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-08 15:25:38 INFO  org.reflections.Reflections:229 - Reflections took 118 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-08 15:25:38 INFO  org.reflections.Reflections:229 - Reflections took 16 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-08 15:25:38 INFO  org.reflections.Reflections:229 - Reflections took 17 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-08 15:26:55 INFO  org.reflections.Reflections:229 - Reflections took 102 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-08 15:26:55 INFO  org.reflections.Reflections:229 - Reflections took 12 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-08 15:26:55 INFO  org.reflections.Reflections:229 - Reflections took 13 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-08 15:26:57 ERROR edu.pitt.dbmi.causal.cmd.CausalCmdApplication:107 - 
+java.nio.file.NoSuchFileException: IST_binned\fges_1610116016173.txt
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:235)
+	at java.base/java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:478)
+	at java.base/java.nio.file.Files.newOutputStream(Files.java:224)
+	at edu.pitt.dbmi.causal.cmd.CausalCmdApplication.runTetrad(CausalCmdApplication.java:124)
+	at edu.pitt.dbmi.causal.cmd.CausalCmdApplication.main(CausalCmdApplication.java:105)
+2021-01-08 15:27:15 INFO  org.reflections.Reflections:229 - Reflections took 118 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-08 15:27:15 INFO  org.reflections.Reflections:229 - Reflections took 15 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-08 15:27:15 INFO  org.reflections.Reflections:229 - Reflections took 17 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-08 15:27:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file IST_binned.csv.
+2021-01-08 15:27:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file IST_binned.csv.
+2021-01-08 15:27:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 13733 cases and 26 variables.
+2021-01-08 15:27:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file IST_binned.csv.
+2021-01-08 15:27:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file IST_binned.csv.
+2021-01-08 15:27:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File IST_binned.csv contains 13733 cases, 26 variables.
