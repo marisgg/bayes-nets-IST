@@ -75,9 +75,9 @@ suffStat = list(C = cor(data), n = nrow(data))
 ## estimate CPDAG
 GM <- pc(suffStat,
                 ## independence test: G^2 statistic
-                indepTest = gaussCItest , alpha = 0.01, p=ncol(data),labels =colnames(data), verbose = TRUE)
+                indepTest = gaussCItest , alpha = 0.05, p=ncol(data),labels =colnames(data), verbose = TRUE)
 
 
 curvelayout = matrix(0,28,28)
-qgraph(GM,layout = GMlayout,curve=1,curveAll = TRUE)
+qgraph(GM,layout = GMlayout,curve=0,curveAll = TRUE)
 
