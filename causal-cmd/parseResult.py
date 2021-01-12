@@ -1,4 +1,3 @@
-import os, sys
 import argparse
 from datetime import datetime
 
