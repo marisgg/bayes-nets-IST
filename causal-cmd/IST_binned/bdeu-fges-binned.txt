@@ -1,5 +1,5 @@
 ================================================================================
-FGES (Fri, January 08, 2021 03:27:17 pm)
+FGES (Wed, January 13, 2021 05:17:54 pm)
 ================================================================================
 
 Runtime Parameters
@@ -30,23 +30,23 @@ symmetricFirstStep: no
 verbose: yes
 
 
-Fri, January 08, 2021 03:27:17 pm: Start data validation on file IST_binned.csv.
-Fri, January 08, 2021 03:27:17 pm: End data validation on file IST_binned.csv.
+Wed, January 13, 2021 05:17:54 pm: Start data validation on file IST_binned.csv.
+Wed, January 13, 2021 05:17:54 pm: End data validation on file IST_binned.csv.
 There are 13733 cases and 26 variables.
 
-Fri, January 08, 2021 03:27:17 pm: Start reading in file IST_binned.csv.
-Fri, January 08, 2021 03:27:17 pm: Finished reading in file IST_binned.csv.
-Fri, January 08, 2021 03:27:17 pm: File IST_binned.csv contains 13733 cases, 26 variables.
+Wed, January 13, 2021 05:17:54 pm: Start reading in file IST_binned.csv.
+Wed, January 13, 2021 05:17:54 pm: Finished reading in file IST_binned.csv.
+Wed, January 13, 2021 05:17:54 pm: File IST_binned.csv contains 13733 cases, 26 variables.
 
-Start search: Fri, January 08, 2021 03:27:18 pm
+Start search: Wed, January 13, 2021 05:17:54 pm
 --------------------------------------------------------------------------------
-Elapsed initializeForwardEdgesFromEmptyGraph = 362 ms
+Elapsed initializeForwardEdgesFromEmptyGraph = 317 ms
 ** FORWARD EQUIVALENCE SEARCH
 ** BACKWARD EQUIVALENCE SEARCH
 ** FORWARD EQUIVALENCE SEARCH
 ** BACKWARD EQUIVALENCE SEARCH
 --------------------------------------------------------------------------------
-End search: Fri, January 08, 2021 03:27:19 pm
+End search: Wed, January 13, 2021 05:17:55 pm
 
 ================================================================================
 Graph Nodes:

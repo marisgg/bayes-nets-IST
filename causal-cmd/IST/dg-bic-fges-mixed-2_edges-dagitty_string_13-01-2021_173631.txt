@@ -1,0 +1,135 @@
+dag{
+rdef1
+rdef2
+rdef3
+rdef4
+rdef5
+rdef6
+rdef7
+rdef8
+rxasp
+rxhep
+ddiagisc
+ddiagha
+drsisc
+drsh
+dpe
+ddead
+age
+sex
+rsbp
+occode
+LACS
+OTH
+PACS
+POCS
+TACS
+LACS -> PACS
+LACS -> rdef2
+OTH -> LACS
+OTH -> PACS
+OTH -> POCS
+OTH -> rdef1
+OTH -> rdef2
+OTH -> rdef3
+OTH -> rdef8
+PACS -> rdef2
+PACS -> rdef3
+POCS -> LACS
+POCS -> PACS
+POCS -> rdef1
+POCS -> rdef2
+POCS -> rdef3
+POCS -> rdef5
+POCS -> rdef7
+TACS -> LACS
+TACS -> PACS
+TACS -> POCS
+TACS -> ddead
+TACS -> ddiagisc
+TACS -> dpe
+TACS -> rdef1
+TACS -> rdef4
+TACS -> rdef5
+TACS -> rdef8
+age -> POCS
+age -> ddead
+age -> dnostrk
+age -> drsh
+age -> occode
+age -> rdef1
+age -> rdef2
+age -> rdef4
+age -> rdef6
+age -> sex
+ddead -> dnostrk
+ddead -> dpe
+ddead -> drsh
+ddead -> rdef2
+ddiagha -> ddiagisc
+ddiagun -> age
+ddiagun -> ddead
+ddiagun -> ddiagha
+ddiagun -> ddiagisc
+ddiagun -> dnostrk
+ddiagun -> occode
+dnostrk -> ddiagisc
+drsh -> ddiagha
+drsh -> rxhep
+drsisc -> TACS
+drsisc -> ddead
+drsisc -> occode
+occode -> TACS
+occode -> ddead
+occode -> dnostrk
+occode -> drsh
+occode -> rdef1
+occode -> rdef2
+occode -> rdef3
+occode -> rdef4
+occode -> rdef5
+occode -> rdef6
+occode -> rdef8
+rdef1 -> dnostrk
+rdef2 -> dnostrk
+rdef2 -> rdef1
+rdef2 -> rdef3
+rdef3 -> ddiagha
+rdef3 -> dnostrk
+rdef3 -> rdef1
+rdef3 -> sex
+rdef4 -> LACS
+rdef4 -> OTH
+rdef4 -> POCS
+rdef4 -> rdef1
+rdef4 -> rdef2
+rdef4 -> rdef5
+rdef4 -> rdef7
+rdef5 -> LACS
+rdef5 -> ddiagha
+rdef5 -> rdef2
+rdef6 -> LACS
+rdef6 -> OTH
+rdef6 -> TACS
+rdef6 -> rdef1
+rdef6 -> rdef2
+rdef6 -> rdef3
+rdef6 -> rdef4
+rdef6 -> rdef5
+rdef6 -> rdef8
+rdef6 -> sex
+rdef7 -> LACS
+rdef7 -> ddead
+rdef7 -> rdef1
+rdef7 -> rdef2
+rdef7 -> rdef5
+rdef7 -> rdef8
+rdef7 -> sex
+rdef8 -> LACS
+rsbp -> age
+rsbp -> ddiagha
+rsbp -> occode
+rsbp -> rdef6
+rsbp -> sex
+rxasp <-> drsisc
+}

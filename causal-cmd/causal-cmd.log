@@ -117,3 +117,111 @@ java.nio.file.NoSuchFileException: IST_binned\fges_1610116016173.txt
 2021-01-08 15:27:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file IST_binned.csv.
 2021-01-08 15:27:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file IST_binned.csv.
 2021-01-08 15:27:17 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File IST_binned.csv contains 13733 cases, 26 variables.
+2021-01-13 17:05:03 INFO  org.reflections.Reflections:229 - Reflections took 88 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:05:03 INFO  org.reflections.Reflections:229 - Reflections took 13 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:05:03 INFO  org.reflections.Reflections:229 - Reflections took 17 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:05:11 INFO  org.reflections.Reflections:229 - Reflections took 83 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:05:11 INFO  org.reflections.Reflections:229 - Reflections took 8 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:05:11 INFO  org.reflections.Reflections:229 - Reflections took 10 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:05:20 INFO  org.reflections.Reflections:229 - Reflections took 67 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:05:20 INFO  org.reflections.Reflections:229 - Reflections took 19 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:05:20 INFO  org.reflections.Reflections:229 - Reflections took 0 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:05:24 INFO  org.reflections.Reflections:229 - Reflections took 83 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:05:24 INFO  org.reflections.Reflections:229 - Reflections took 10 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:05:24 INFO  org.reflections.Reflections:229 - Reflections took 16 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:07:18 INFO  org.reflections.Reflections:229 - Reflections took 66 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:07:18 INFO  org.reflections.Reflections:229 - Reflections took 15 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:07:19 INFO  org.reflections.Reflections:229 - Reflections took 13 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:08:02 INFO  org.reflections.Reflections:229 - Reflections took 74 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:08:02 INFO  org.reflections.Reflections:229 - Reflections took 0 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:08:02 INFO  org.reflections.Reflections:229 - Reflections took 17 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:09:02 INFO  org.reflections.Reflections:229 - Reflections took 83 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:09:03 INFO  org.reflections.Reflections:229 - Reflections took 17 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:09:03 INFO  org.reflections.Reflections:229 - Reflections took 18 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:09:04 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file IST_binned.csv.
+2021-01-13 17:09:05 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file IST_binned.csv.
+2021-01-13 17:09:05 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 13733 cases and 26 variables.
+2021-01-13 17:09:05 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file IST_binned.csv.
+2021-01-13 17:09:05 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file IST_binned.csv.
+2021-01-13 17:09:05 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File IST_binned.csv contains 13733 cases, 26 variables.
+2021-01-13 17:10:13 INFO  org.reflections.Reflections:229 - Reflections took 84 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:10:13 INFO  org.reflections.Reflections:229 - Reflections took 15 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:10:13 INFO  org.reflections.Reflections:229 - Reflections took 16 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:10:14 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file IST_binned.csv.
+2021-01-13 17:10:14 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file IST_binned.csv.
+2021-01-13 17:10:14 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 13733 cases and 26 variables.
+2021-01-13 17:10:14 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file IST_binned.csv.
+2021-01-13 17:10:15 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file IST_binned.csv.
+2021-01-13 17:10:15 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File IST_binned.csv contains 13733 cases, 26 variables.
+2021-01-13 17:13:14 INFO  org.reflections.Reflections:229 - Reflections took 77 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:13:14 INFO  org.reflections.Reflections:229 - Reflections took 16 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:13:15 INFO  org.reflections.Reflections:229 - Reflections took 18 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:13:45 INFO  org.reflections.Reflections:229 - Reflections took 83 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:13:45 INFO  org.reflections.Reflections:229 - Reflections took 0 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:13:45 INFO  org.reflections.Reflections:229 - Reflections took 14 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:13:54 INFO  org.reflections.Reflections:229 - Reflections took 88 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:13:54 INFO  org.reflections.Reflections:229 - Reflections took 16 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:13:54 INFO  org.reflections.Reflections:229 - Reflections took 17 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:14:31 INFO  org.reflections.Reflections:229 - Reflections took 82 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:14:31 INFO  org.reflections.Reflections:229 - Reflections took 15 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:14:31 INFO  org.reflections.Reflections:229 - Reflections took 16 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:14:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file IST_binned.csv.
+2021-01-13 17:14:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file IST_binned.csv.
+2021-01-13 17:14:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 13733 cases and 26 variables.
+2021-01-13 17:14:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file IST_binned.csv.
+2021-01-13 17:14:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file IST_binned.csv.
+2021-01-13 17:14:33 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File IST_binned.csv contains 13733 cases, 26 variables.
+2021-01-13 17:17:52 INFO  org.reflections.Reflections:229 - Reflections took 83 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:17:52 INFO  org.reflections.Reflections:229 - Reflections took 8 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:17:52 INFO  org.reflections.Reflections:229 - Reflections took 0 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:17:54 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file IST_binned.csv.
+2021-01-13 17:17:54 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file IST_binned.csv.
+2021-01-13 17:17:54 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 13733 cases and 26 variables.
+2021-01-13 17:17:54 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file IST_binned.csv.
+2021-01-13 17:17:54 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file IST_binned.csv.
+2021-01-13 17:17:54 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File IST_binned.csv contains 13733 cases, 26 variables.
+2021-01-13 17:19:48 INFO  org.reflections.Reflections:229 - Reflections took 86 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:19:49 INFO  org.reflections.Reflections:229 - Reflections took 11 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:19:49 INFO  org.reflections.Reflections:229 - Reflections took 0 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:19:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file varfile.txt.
+2021-01-13 17:19:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file varfile.txt.
+2021-01-13 17:19:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file IST_corrected_processed.csv.
+2021-01-13 17:19:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file IST_corrected_processed.csv.
+2021-01-13 17:19:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 13733 cases and 27 variables.
+2021-01-13 17:19:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file varfile.txt.
+2021-01-13 17:19:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file varfile.txt.
+2021-01-13 17:19:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file IST_corrected_processed.csv.
+2021-01-13 17:19:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file IST_corrected_processed.csv.
+2021-01-13 17:19:50 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File IST_corrected_processed.csv contains 13733 cases, 27 variables.
+2021-01-13 17:20:07 INFO  org.reflections.Reflections:229 - Reflections took 83 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:20:07 INFO  org.reflections.Reflections:229 - Reflections took 10 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:20:07 INFO  org.reflections.Reflections:229 - Reflections took 17 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:20:38 INFO  org.reflections.Reflections:229 - Reflections took 71 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:20:38 INFO  org.reflections.Reflections:229 - Reflections took 0 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:20:38 INFO  org.reflections.Reflections:229 - Reflections took 12 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:21:45 INFO  org.reflections.Reflections:229 - Reflections took 101 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:21:45 INFO  org.reflections.Reflections:229 - Reflections took 12 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:21:45 INFO  org.reflections.Reflections:229 - Reflections took 0 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:21:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file varfile.txt.
+2021-01-13 17:21:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file varfile.txt.
+2021-01-13 17:21:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file IST_corrected_processed.csv.
+2021-01-13 17:21:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file IST_corrected_processed.csv.
+2021-01-13 17:21:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 13733 cases and 27 variables.
+2021-01-13 17:21:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file varfile.txt.
+2021-01-13 17:21:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file varfile.txt.
+2021-01-13 17:21:46 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file IST_corrected_processed.csv.
+2021-01-13 17:21:47 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file IST_corrected_processed.csv.
+2021-01-13 17:21:47 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File IST_corrected_processed.csv contains 13733 cases, 27 variables.
+2021-01-13 17:29:18 INFO  org.reflections.Reflections:229 - Reflections took 88 ms to scan 1 urls, producing 17 keys and 275 values 
+2021-01-13 17:29:19 INFO  org.reflections.Reflections:229 - Reflections took 15 ms to scan 1 urls, producing 7 keys and 41 values 
+2021-01-13 17:29:19 INFO  org.reflections.Reflections:229 - Reflections took 11 ms to scan 1 urls, producing 5 keys and 32 values 
+2021-01-13 17:29:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file varfile.txt.
+2021-01-13 17:29:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file varfile.txt.
+2021-01-13 17:29:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - Start data validation on file IST_corrected_processed.csv.
+2021-01-13 17:29:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:114 - End data validation on file IST_corrected_processed.csv.
+2021-01-13 17:29:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataValidations:78 - There are 13733 cases and 27 variables.
+2021-01-13 17:29:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file varfile.txt.
+2021-01-13 17:29:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file varfile.txt.
+2021-01-13 17:29:20 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Start reading in file IST_corrected_processed.csv.
+2021-01-13 17:29:21 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - Finished reading in file IST_corrected_processed.csv.
+2021-01-13 17:29:21 INFO  edu.pitt.dbmi.causal.cmd.data.DataFiles:114 - File IST_corrected_processed.csv contains 13733 cases, 27 variables.

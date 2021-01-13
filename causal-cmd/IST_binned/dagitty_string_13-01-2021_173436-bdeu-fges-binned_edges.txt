@@ -1,0 +1,88 @@
+dag{
+rdef1
+rdef2
+rdef3
+rdef4
+rdef5
+rdef6
+rdef7
+rdef8
+rxasp
+rxhep
+ddiagisc
+ddiagha
+drsisc
+drsh
+dpe
+ddead
+age
+sex
+rsbp
+occode
+LACS
+OTH
+PACS
+POCS
+TACS
+LACS -> PACS
+LACS -> POCS
+LACS -> ddead
+LACS -> occode
+LACS -> rdef8
+OTH -> PACS
+OTH -> POCS
+OTH -> rdef7
+PACS -> ddead
+PACS -> rdef4
+POCS -> PACS
+POCS -> rdef4
+POCS -> rdef7
+TACS -> PACS
+TACS -> POCS
+TACS -> occode
+TACS -> rdef1
+TACS <-> rdef2
+TACS -> rdef5
+TACS <-> rdef6
+TACS -> rdef8
+age -> ddiagisc
+age -> sex
+ddead -> dpe
+ddead -> drsh
+ddiagha -> ddiagisc
+drsh -> ddiagha
+occode -> age
+occode -> ddead
+occode -> dpe
+occode -> drsisc
+rdef1 -> LACS
+rdef1 -> OTH
+rdef1 -> POCS
+rdef1 -> rdef4
+rdef1 -> rdef7
+rdef2 -> LACS
+rdef2 -> OTH
+rdef2 -> POCS
+rdef2 -> rdef1
+rdef2 -> rdef4
+rdef2 -> rdef5
+rdef2 -> rdef7
+rdef3 -> LACS
+rdef3 -> POCS
+rdef3 <-> TACS
+rdef3 -> ddiagha
+rdef3 -> occode
+rdef3 -> rdef1
+rdef3 <-> rdef2
+rdef3 -> rdef4
+rdef3 -> rdef5
+rdef5 -> LACS
+rdef5 -> rdef1
+rdef5 -> rdef4
+rdef5 -> rdef7
+rdef6 -> LACS
+rdef6 -> rdef4
+rdef6 -> rdef5
+rdef8 -> OTH
+rdef8 -> rdef4
+}
